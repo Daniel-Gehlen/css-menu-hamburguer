@@ -1,0 +1,33 @@
+/* ANIMAÇÂO DO MENU */
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(-45deg);
+    background-color: #2f2f5a;
+    top: 47px
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translateX(35px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(45deg);
+    background-color: #2f2f5a;
+    top: 48px
+}
+
+#toggle:checked + .checkbox {
+    background-color: #FAFAFC;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0 0 0 100vmax #FAFAFC;
+    z-index: 1;
+}
+
+#toggle:checked ~ .menu-items {
+    visibility: visible;
+    opacity: 1;  
+}
